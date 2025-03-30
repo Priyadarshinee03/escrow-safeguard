@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				escrow: {
+					blue: '#0056b3',
+					green: '#28a745',
+					red: '#dc3545',
+					yellow: '#ffc107',
+					gray: '#6c757d',
+					light: '#f8f9fa',
+					dark: '#343a40'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,24 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-secure': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-secure': 'pulse-secure 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+			},
+			fontFamily: {
+				sans: ['"Inter"', 'sans-serif'],
+				display: ['"Poppins"', 'sans-serif']
 			}
 		}
 	},
