@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -12,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Menu, PackageLock, Shield, ShoppingBag, UserCircle, LogOut } from 'lucide-react';
+import { Menu, ShieldCheck, Shield, ShoppingBag, UserCircle, LogOut } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 
 const Navbar = () => {
@@ -24,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <PackageLock className="h-8 w-8 text-escrow-blue" />
+            <ShieldCheck className="h-8 w-8 text-escrow-blue" />
             <span className="font-display font-bold text-xl">EscrowSafeguard</span>
           </Link>
 
