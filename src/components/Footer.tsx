@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { PackageLock, Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
+import { ShieldCheck, Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <PackageLock className="h-8 w-8 text-escrow-blue" />
+              <ShieldCheck className="h-8 w-8 text-escrow-blue" />
               <span className="font-display font-bold text-xl">EscrowSafeguard</span>
             </Link>
             <p className="text-sm text-muted-foreground">
