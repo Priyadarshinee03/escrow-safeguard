@@ -14,6 +14,7 @@ import RegisterPage from "./pages/RegisterPage";
 import DashboardPage from "./pages/DashboardPage";
 import AdminPage from "./pages/AdminPage";
 import NotFound from "./pages/NotFound";
+import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/index" element={<Index />} />
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/how-it-works" element={<HowItWorksPage />} />
               <Route path="/login" element={<LoginPage />} />
